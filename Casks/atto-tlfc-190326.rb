@@ -8,7 +8,7 @@ cask 'atto-tlfc-190326' do
 
   installer script: {
                       executable:   '/Applications/ATTO/ThunderLinkFC16/atflash',
-                      args:         ["-f #{staged_path}/flsbundle_tlfc16-32_2019_03_26"],
+                      args:         ['-f', "#{staged_path}/flsbundle_tlfc16-32_2019_03_26"],
                       sudo:         true,
                       print_stderr: false,
                     }
