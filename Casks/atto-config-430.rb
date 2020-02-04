@@ -6,7 +6,7 @@ cask 'atto-config-430' do
   name 'ATTO ConfigTool'
   homepage 'https://www.atto.com/features/config-tool'
 
-  pkg 'ConfigTool 4.30/Service/attocfgd.pkg'      
+  pkg 'Service/attocfgd.pkg'      
 
   uninstall pkgutil: [
                       'com.attotech.attoConfigtoolService.com.attotech.attocfgd.pkg',
