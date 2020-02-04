@@ -7,7 +7,7 @@ cask 'atto-tlfc-190326' do
   homepage 'https://www.atto.com/downloads/158'
 
   installer script: {
-                      executable:   '/Applications/ATTO/ThunderLinkFC8/atflash',
+                      executable:   '/Applications/ATTO/ThunderLinkFC16/atflash',
                       args:         ["-f #{staged_path}/flsbundle_tlfc16-32_2019_03_26"],
                       sudo:         true,
                       print_stderr: false,
@@ -15,7 +15,7 @@ cask 'atto-tlfc-190326' do
 
 
   uninstall script:       {
-                            executable:   '/Applications/ATTO/ThunderLinkFC8/Uninstall.command',
+                            executable:   '/Applications/ATTO/ThunderLinkFC16/Uninstall.command',
                             sudo:         true,
                             must_succeed: false,
                             print_stderr: false,
