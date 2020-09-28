@@ -9,16 +9,11 @@ cask 'avid-mediacomposer-20199' do
   pkg 'Install Media Composer.pkg'      
   
   uninstall quit:    'com.avid.mediacomposer',
-<<<<<<< HEAD
-   
-            pkgutil:  [
-=======
   
             script:  [
                       executable: '/Applications/Avid_Uninstallers/Media Composer/Media Composer Uninstaller.app/Contents/Resources/preuninstall',
   
             pkgutil: [
->>>>>>> added preuninstall script
                       'com.avid.tmp.avidlink.pkg',
                       'com.avid.tmp.CCS.pkg',
                       'com.avid.osx.utilities.pkg',
